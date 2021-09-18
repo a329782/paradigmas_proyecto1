@@ -50,22 +50,39 @@ function changeImage(num) {
     var endTime = document.getElementById("endTime" + num[num.length - 1]);
     var total = document.getElementById("total" + num[num.length - 1]);
 
+    //If condition to change images and id's in index.html
     if(tableNum.src.match("tableOff.png"))
     {
         tableNum.src = "tableOn.png";
         startTime.innerHTML = timeStart();
         endTime.innerHTML = "*En uso*";
         total.innerHTML = "Calculando...";
+        //Interval to keep updating the total
+        setInterval(() => {
+            var tableUsageUpdates = getDifference(startTime.innerHTML, timeStart());
+            total.innerHTML = ((tableUsageUpdates * 50)/60).toFixed(2);
+            if(total.innerHTML < 10)
+            {
+                total.innerHTML = "$" + "0" + total.innerHTML;
+            }
+            else
+            {
+                total.innerHTML = "$" + total.innerHTML;
+            }
+        }, 5000);
     }
     else
     {
         tableNum.src = "tableOff.png";
         endTime.innerHTML = timeStart();
        
+        //Var that gets table usage makes the difference between start time and end time
+        //then making rule of three to calculate the total.
         var tableUsage = getDifference(startTime.innerHTML, endTime.innerHTML);
         
         total.innerHTML = ((tableUsage * 50)/60).toFixed(2);
         
+        //If condition when total is less than 0 so it adds a 0 before the total ("-> 05:56")
         if(total.innerHTML < 10)
         {
             total.innerHTML = "$" + "0" + total.innerHTML;
@@ -74,6 +91,5 @@ function changeImage(num) {
         {
             total.innerHTML = "$" + total.innerHTML;
         }
-
     }
 }
