@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 0.633473457742472) 65%,
+		rgba(13, 136, 44, 1) 100%
+	);
+}
+
+div.tablesContainer {
+	min-height: 90vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*
+div {
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	height: 169px;
+	width: 268px;
+}*/
+
+p {
+	font-size: 24px;
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	font-family: "Poppins", sans-serif;
+}
+
+#mesaOne {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+#mesaTwo {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+#mesaThree {
+	grid-column: 3/3;
+	grid-row: 1/2;
+}
+
+#mesaFour {
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+#mesaFive {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+#mesaSix {
+	grid-column: 3/3;
+	grid-row: 4/5;
+}
+
+#infoOne {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime1 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime1 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total1 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+#infoTwo {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime2 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime2 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total2 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+#infoThree {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 3/4;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime3 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime3 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total3 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 3/4;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+#infoFour {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 6/6;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime4 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime4 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total4 {
+	font-size: 18px;
+	grid-column: 1/2;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+#infoFive {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 6/6;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime5 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime5 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total5 {
+	font-size: 18px;
+	grid-column: 2/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+#infoSix {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 6/6;
+	justify-self: start;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+
+#startTime6 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: -4px;
+	margin-right: 75px;
+}
+
+#endTime6 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+#total6 {
+	font-size: 18px;
+	grid-column: 3/3;
+	grid-row: 6/6;
+	justify-self: end;
+	margin-top: 104px;
+	margin-right: 75px;
+}
+
+img {
+	align-self: center;
+	justify-self: center;
+	display: flex;
+	height: 169px;
+	width: 268px;
+	border-radius: 3%;
+}
+
+#table1 {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table1:hover {
+	cursor: pointer;
+}
+
+#table2 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table2:hover {
+	cursor: pointer;
+}
+
+#table3 {
+	grid-column: 3/3;
+	grid-row: 2/3;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table3:hover {
+	cursor: pointer;
+}
+
+#table4 {
+	grid-column: 1/2;
+	grid-row: 5/6;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table4:hover {
+	cursor: pointer;
+}
+
+#table5 {
+	grid-column: 2/3;
+	grid-row: 5/6;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table5:hover {
+	cursor: pointer;
+}
+
+#table6 {
+	grid-column: 3/3;
+	grid-row: 5/6;
+	align-self: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: rotate(270deg);
+}
+
+#table6:hover {
+	cursor: pointer;
+}
